@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html class="theme-dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGUYEN NGOC TRI | HACK FREEFIRE</title>
+    <link rel="shortcut icon" href="https://files.catbox.moe/vd3acw.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pattaya|Potta+One|Rowdies">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Rowdies', sans-serif;
+            background-color: #000;
+            color: #fff;
+            overflow: hidden;
+        }
+        .loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 1000;
+        }
+        .loading-circle {
+            border: 8px solid rgba(255, 255, 255, 0.2);
+            border-top: 8px solid #fff;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite;
+        }
+        .loading-text {
+            color: #fff;
+            font-size: 24px;
+            margin-top: 20px;
+            font-family: 'Potta One', cursive;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .container {
+            display: none;
+            text-align: center;
+            padding: 65px;
+            border: 5px solid;
+            margin: 10px;
+            border-radius: 25px;
+        }
+        @keyframes border-animation {
+            0% { border-image-slice: 1 0; }
+            100% { border-image-slice: 0 1; }
+        }
+        .glow-text {
+            font-size: 26px;
+            color: rgb(255, 0, 0);
+            text-shadow: 0 0 30px rgb(255, 0, 0);
+            animation: glow 2s infinite;
+        }
+        @keyframes glow {
+            0% { text-shadow: 0 0 5px #FF0000, 0 0 10px #FF0000, 0 0 15px #FF0000, 0 0 20px #FF0000, 0 0 25px #FF0000, 0 0 30px #FF0000, 0 0 35px #FF0000; }
+            50% { text-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF, 0 0 15px #00FFFF, 0 0 20px #00FFFF, 0 0 25px #00FFFF, 0 0 30px #00FFFF, 0 0 35px #00FFFF; }
+            100% { text-shadow: 0 0 5px #FF0000, 0 0 10px #FF0000, 0 0 15px #FF0000, 0 0 20px #FF0000, 0 0 25px #FF0000, 0 0 30px #FF0000, 0 0 35px #FF0000; }
+        }
+        .button {
+            background-color: #333;
+            border: 2px solid #fff;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+        .button:hover {
+            background-color: #555;
+            border-color: #ff0;
+            color: #ff0;
+        }
+        .glowing-border {
+            border: 2px solid #ff0;
+            box-shadow: 0 0 10px #ff0;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+        .glowing-border:hover {
+            box-shadow: 0 0 20px #ff0;
+        }
+        .footer-container {
+            text-align: center;
+            padding: 20px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: #fff;
+        }
+        .social-icons svg {
+            width: 24px;
+            height: 24px;
+            fill: #fff;
+            transition: fill 0.3s;
+        }
+        .social-icons a:hover svg {
+            fill: #ff0;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(function () {
+                document.querySelector('.loading-screen').style.display = 'none';
+                document.querySelector('.container').style.display = 'block';
+            }, 2000);
+        });
+        function copyKey() {
+            const keyText = document.querySelector('.glowing-border b').innerText;
+            navigator.clipboard.writeText(keyText).then(() => {
+                alert(' Đã Được Copy Thành Công!');
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="loading-circle"></div>
+        <div class="loading-text">NGUYEN TRI</div>
+    </div>
+    <div class="container">
+        <center>
+            <img src="https://i.imgur.com/aPpOVrW.png" style="width:250px;height:250px;">
+        </center>
+        <h2 class="glow-text">NGUYEN NGOC TRI</h2>
+        <p class="glowing-border">
+            TẢI HACK TẠI ĐÂY <p>LINK APP : https://install.appcenter.ms/users/trung<p>kienvip/apps/nguyentri-1/distribution_groups/nguyentri
+</p>            
+<p>LINK REG: https://www.mediafire.com/file/kxilhb<p>p9xd0nrw7/REGEDIT+FREEFRE+[+SETEDIT+]+.txt/file
+        </p>
+        <div>
+            <p>All rights reserved - © 2024 <a>NGUYENTRI</a></p>
+        </footer>
+    </div>
+</body>
+</html>
